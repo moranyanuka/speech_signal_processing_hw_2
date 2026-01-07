@@ -10,11 +10,11 @@ from pathlib import Path
 import glob
 import os
 
-# Install demucs if not already installed
-# !pip install demucs
+# Install denoiser if not already installed
+# !pip install denoiser
 
-from demucs import pretrained
-from demucs.dsp import convert_audio
+from denoiser import pretrained
+from denoiser.dsp import convert_audio
 
 def denoise_file(model, input_path, output_path, sr):
     """
